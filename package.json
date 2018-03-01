@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "child-process-promise": "^2.2.1",
+    "commander": "^2.14.1",
     "extract-zip": "^1.6.5",
     "minimist": "^1.2.0",
     "pdfkit": "^0.8.3"
