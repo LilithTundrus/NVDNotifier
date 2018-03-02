@@ -21,7 +21,7 @@ Standard `--version` arg is supported to check which version of this npm app you
 ```
 $ nvd-cli --version
 
-0.6.5
+0.6.7
 ```
 
 ## Usage
@@ -38,10 +38,15 @@ $ nvd-cli  -t search_term -f [year] || -r
 
 ## History
 
+- **0.6.7**
+    - Improved `commander` functionality
+
+
 - **0.6.5**
     - Fixed the annoying PATH errors with Windows
     - Tested in Linux/UNIX environment
     - Removed some debugging code
+
 
 - **0.5.5**
     - Completely changed how this CLI tool operates
@@ -59,8 +64,10 @@ $ nvd-cli  -t search_term -f [year] || -r
 - **0.4.9**
     - Set PDKit to default font to avoid issues
 
+
 - **0.4.8**
     - Fixed checklist issue that popped up that testing didn't catch
+
 
 - **0.4.7**
     - `--search` command now actually does something (accidentally left code commented when testing)
