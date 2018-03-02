@@ -14,7 +14,6 @@ Please be patient since this will be the first npm cli-type project I've worked 
 ## Installation
 
 You can install this cli program via npm:
-
 ```
 npm install -g nvd-cli
 ```
@@ -24,118 +23,24 @@ npm install -g nvd-cli
 ```
 $ nvd-cli --help
 
-Usage: nvd-cli <primary flag> <primary flag arg> [optional flags]
+Usage: nvd-cli  -t search_term -f [year] || -r
 
--f, --full            Conduct a full search against the default or provided 
-                      checklist for a given <year> arg
+-f, --full            Conduct a full search against for a given <year> arg
 
 -r, --recent, recent  Search for vulnerabilaties in the NVD recent category using default 
-                      or provided checklist
 
--s, --search          Specifically search for an NVD vulnerability matching the providded 
-                      <product> or <vendor> string and optional <year> arg
-
-- OPTIONAL PARAMETERS -
-
--o, --output          Change the nvd-cli output file name and/or location
-
--c, --checklist       Change the nvd-cli checklist file name and/or location
-
--t, --type            Change the output type for the NVD report (.pdf or .txt)
-
-- MISC PARAMETERS -
-
--h, --help, help      Display this help text or try -h <command>
-
--v, --version         Get the version of nvd-cli you are currently running
-
-
-For more help on a specific command/arg type help <command> without the '-' or '--'
-
-```
-
-**More Info on Commands:**
-
-
-**Recent Check:**
-```
-    Usage: -r, --recent, recent, [optional parameters]
-
-    Description:        Get RECENT NVD data matching the default or provided
-                        checklist and write the report to a file
-```
-
-**Full Check:**
-```
-    Usage: -f, --full, <year to fully search> [optional parameters]
-    
-    Description:        Get FULL NVD data for a given year matching the 
-                        default or provided checklist and write the report to a file
-```
-
-
-**Search by Product or Vendor:**
-```
-    Usage: -s, --search, <year to search> --product=<product_name> OR --vendor=<vendor_name> [optional parameters]
-        
-    Description:        Get NVD data for a given year that matches the 
-                        <product_name> or <vendor_name> string
-```
-
-**Checklist Location (Optional):**
-```
-    Usage: <primary flag> -c, --checklist=<checklist_file_location>
-            
-    Description:        Specify a custom checklist other than the
-                        default './checklist.json'
-```
-
-**Output Location (Optional):**
-```
-    Usage: <primary flag> -o, --output=<custom_output_dir/file_name>
-                
-    Description:        Specify a report location and file name other
-                        than the default './report.pdf'
-```
-
-**Type of Output (Optional):**
-```
-    Usage: <primary flag> -t, --type=<file_type_to_generate ('.txt') ('.pdf')>
-                    
-    Description:        Change the report type to be either .txt or .pdf
-```
-
-
-## Configuring
-
-TODO: Add configuration info
-
-## Checklist Schema
-
-**NOTE: The default checklist.json is just used for testing!!**
-
-When providing a checklist, the .json file should look something like this:
-
-```
-
-[
-    {
-        "manufacturerName": "nodejs",
-        "softwareName": "node.js"
-    },
-    {
-        "manufacturerName": "microsoft",
-        "softwareName": "windows_xp"
-    },
-    {
-        "manufacturerName": "redhat",
-        "softwareName": "enterprise_linux"
-    }
-]
+-t, --term            Search term to check the NVD database against
 
 ```
 
 ## History
+
+- **0.5.5**
+    - Completely changed how this CLI tool operates
+    - Streamlined usage and removed a lot of unused code
+    - Using `commander` for processing args instead of custom code
+    - Removing files on script completeion
+
 
 - **0.5.0**
     - Added `--vendor` option to `-s` and `--search` primary flags
