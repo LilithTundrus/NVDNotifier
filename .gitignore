@@ -4,5 +4,5 @@ nvdcve-1.0-2017.json
 nvdcve-1.0-recent.json
 checklist.json
 **.pdf
-**.txt
+.txt
 nvdcve-1.0*.json
