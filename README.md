@@ -1,12 +1,9 @@
 # nvd-cli
 
-**NOTE: This project is currently in BETA.. please stand by...**
-
 This project is designed to assist with searching the National Vulnerability Database 
 ([NVD](https://nvd.nist.gov/)) and getting vulnerability info for the products that matter to **you**
 
 If there's errors or anything like that, feel free to put up and issue or contact me personally.
-This is a personal project of sorts but I know how useful it can be
 
 Please be patient since this will be the first npm cli-type project I've worked on. I'll be testing as I can
 
@@ -18,22 +15,33 @@ You can install this cli program via npm:
 npm install -g nvd-cli
 ```
 
+### Checking your nvd-cli version
+
+Standard `--version` arg is supported to check which version of this npm app you have:
+```
+$ nvd-cli --version
+
+0.6.5
+```
+
 ## Usage
 
 ```
-$ nvd-cli --help
-
-Usage: nvd-cli  -t search_term -f [year] || -r
+$ nvd-cli  -t search_term -f [year] || -r
 
 -f, --full            Conduct a full search against for a given <year> arg
 
 -r, --recent, recent  Search for vulnerabilaties in the NVD recent category using default 
 
 -t, --term            Search term to check the NVD database against
-
 ```
 
 ## History
+
+- **0.6.5**
+    - Fixed the annoying PATH errors with Windows
+    - Tested in Linux/UNIX environment
+    - Removed some debugging code
 
 - **0.5.5**
     - Completely changed how this CLI tool operates
