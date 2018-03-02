@@ -1,6 +1,6 @@
 {
   "name": "nvd-cli",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "Check the NVD for vulnerabilites based on a provided checklist file and output results to text or PDF",
   "main": "index.js",
   "dependencies": {
