@@ -4,6 +4,7 @@
   "description": "Check the NVD for vulnerabilites based on a provided checklist file and output results to text or PDF",
   "main": "index.js",
   "dependencies": {
+    "app-root-dir": "^1.0.2",
     "child-process-promise": "^2.2.1",
     "commander": "^2.14.1",
     "extract-zip": "^1.6.5",
