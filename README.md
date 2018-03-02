@@ -38,7 +38,7 @@ $ nvd-cli  -t search_term -f [year] || -r
 
 ## History
 
-- **0.6.7**
+- **0.6.8**
     - Improved `commander` functionality
 
 
