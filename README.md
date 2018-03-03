@@ -36,9 +36,15 @@ $ nvd-cli  -t search_term -f [year] || -r
 -t, --term            Search term to check the NVD database against
 ```
 
+
+## Known issues
+
+Using this command line tool in a NodeJS project folder will cause a pathing issue, crashing the tool. Avoid this for now.
+
+
 ## History
 
-- **0.6.8**
+- **0.6.9**
     - Improved `commander` functionality
 
 
